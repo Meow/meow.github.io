@@ -1,0 +1,13 @@
+$max-phone-width: 700px;
+$max-tablet-width: 1000px;
+
+:root {
+  --font-size: 14px;
+
+  --padding-small: 0.5em;
+  --padding-normal: 1em;
+  --padding-large: 2em;
+  
+  --max-phone-width: #{$max-phone-width};
+  --max-tablet-width: #{$max-tablet-width};
+}

@@ -1,0 +1,11 @@
+html {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: var(--font-size);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+}

@@ -1,0 +1,10 @@
+$text-color: #dadada;
+$background-color: #121212;
+$accent-color: #ff0000;
+
+:root {
+  --text-color: #{$text-color};
+  --background-color: #{$background-color};
+
+  --accent-color: #{$accent-color};
+}
