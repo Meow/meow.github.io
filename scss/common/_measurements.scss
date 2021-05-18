@@ -4,9 +4,17 @@ $max-tablet-width: 1000px;
 :root {
   --font-size: 14px;
 
+  --font-h1-size: 1.5em;
+  --font-h2-size: 1.35em;
+  --font-h3-size: 1.2em;
+  --font-h4-size: 1.1em;
+  --font-h5-size: 1em;
+
   --padding-small: 0.5em;
   --padding-normal: 1em;
   --padding-large: 2em;
+
+  --navigation-height: 48px;
   
   --max-phone-width: #{$max-phone-width};
   --max-tablet-width: #{$max-tablet-width};

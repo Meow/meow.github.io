@@ -1,10 +1,13 @@
 $text-color: #dadada;
 $background-color: #121212;
-$accent-color: #ff0000;
+$accent-color: #634376;
 
 :root {
   --text-color: #{$text-color};
   --background-color: #{$background-color};
+  --link-color: #{lighten($accent-color, 50%)};
 
   --accent-color: #{$accent-color};
+  --accent-border-color: #{lighten($accent-color, 30%)};
+  --accent-dark-color: #{darken($accent-color, 15%)};
 }

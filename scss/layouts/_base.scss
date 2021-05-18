@@ -9,3 +9,29 @@ body {
   background: var(--background-color);
   color: var(--text-color);
 }
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: var(--max-tablet-width);
+}
+
+@mixin header-tag($el) {
+  #{$el} {
+    font-weight: bold;
+    font-size: var(--font-#{$el}-size);
+    border-bottom: 1px solid var(--accent-color);
+    padding: var(--padding-small) 0;
+  }
+}
+
+@include header-tag(h1);
+@include header-tag(h2);
+@include header-tag(h3);
+@include header-tag(h4);
+@include header-tag(h5);

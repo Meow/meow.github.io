@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  line-height: var(--navigation-height);
+  background: var(--accent-color);
+  border-bottom: 1px solid var(--accent-border-color);
+  border-right: 1px solid var(--accent-border-color);
+  box-shadow: 0 -1px var(--accent-dark-color) inset;
+  justify-content: space-between;
+
+  & > a {
+    color: var(--link-color);
+  }
+
+  &__link {
+    flex-grow: 1;
+    padding: 0 var(--padding-normal);
+    border-left: 1px solid var(--accent-border-color);
+    border-right: 1px solid var(--accent-dark-color);
+    text-align: center;
+
+    &:hover {
+      background-color: var(--accent-dark-color);
+    }
+  }
+}
