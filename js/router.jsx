@@ -19,10 +19,10 @@ export default function Routes() {
           <Route path="/">
             <Index />
           </Route>
-          <Route path="/programmer">
+          <Route path="/pages/programmer">
             <ProgrammerPage />
           </Route>
-          <Route path="/characters">
+          <Route path="/pages/characters">
             <CharactersPage />
           </Route>
         </Switch>
