@@ -1,0 +1,38 @@
+@mixin block-color($type) {
+  .block--#{$type} {
+    border-color: var(--#{$type}-border-color);
+
+    & .block__header {
+      background: var(--#{$type}-color);
+      border-color: var(--#{$type}-border-color);
+      box-shadow: 0 -1px var(--#{$type}-dark-color) inset;
+    }
+
+    &.block--solid {
+      background: var(--#{$type}-color);
+    }
+  }
+}
+
+.block {
+  border: 1px solid var(--accent-border-color);
+}
+
+.block--solid {
+  background: var(--accent-color);
+}
+
+.block__header {
+  background: var(--accent-color);
+  border-bottom: 1px solid var(--accent-border-color);
+  box-shadow: 0 -1px var(--accent-dark-color) inset;
+}
+
+.block__content {
+  padding: var(--padding-normal);
+}
+
+@include block-color(danger);
+@include block-color(warning);
+@include block-color(success);
+@include block-color(information);

@@ -2,12 +2,25 @@ $text-color: #dadada;
 $background-color: #121212;
 $accent-color: #634376;
 
+$danger-color: #764343;
+$warning-color: #766e43;
+$success-color: #4d7643;
+$information-color: #436a76;
+
+@mixin define-color($name, $variable) {
+  --#{$name}-color: #{$variable};
+  --#{$name}-border-color: #{lighten($variable, 30%)};
+  --#{$name}-dark-color: #{darken($variable, 15%)};
+}
+
 :root {
   --text-color: #{$text-color};
   --background-color: #{$background-color};
   --link-color: #{lighten($accent-color, 50%)};
 
-  --accent-color: #{$accent-color};
-  --accent-border-color: #{lighten($accent-color, 30%)};
-  --accent-dark-color: #{darken($accent-color, 15%)};
+  @include define-color(accent, $accent-color);
+  @include define-color(danger, $danger-color);
+  @include define-color(warning, $warning-color);
+  @include define-color(success, $success-color);
+  @include define-color(information, $information-color);
 }

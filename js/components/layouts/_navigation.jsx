@@ -1,15 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import NavigationLink from "./_navigation_link";
 
-class Navigation extends React.Component {
-  render() {
-    return <div className="navigation">
-      <a className="navigation__link" href="#"><i className="fa fa-home"></i> Home</a>
-      <a className="navigation__link" href="#"><i className="fa fa-horse"></i> Nighty Cloud</a>
-      <a className="navigation__link" href="#"><i className="fa fa-horse"></i> Midnight Story</a>
-      <a className="navigation__link" href="#"><i className="fa fa-dog"></i> Luna the Enfield</a>
-      <a className="navigation__link" href="#"><i className="fa fa-dog"></i> Fletch the Enfield</a>
-    </div>;
-  }
+function Navigation(_props) {
+  return <div className="navigation">
+    <Link to="/" icon="fa-info-circle" name="About me" component={NavigationLink} />
+    <Link to="/" icon="fa-paint-brush" name="Artist" component={NavigationLink} />
+    <Link to="/programmer" icon="fa-code" name="Programmer" component={NavigationLink} />
+    <Link to="/characters" icon="fa-dog" name="My characters" component={NavigationLink} />
+  </div>;
 }
 
 export default Navigation;

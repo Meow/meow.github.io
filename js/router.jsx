@@ -8,6 +8,8 @@ import {
 
 import PageContainer from "./components/layouts/page_container.jsx";
 import Index from "./components/index.jsx";
+import CharactersPage from "./components/characters/index.jsx";
+import ProgrammerPage from "./components/programmer/index.jsx";
 
 export default function Routes() {
   return (
@@ -16,6 +18,12 @@ export default function Routes() {
         <Switch>
           <Route path="/">
             <Index />
+          </Route>
+          <Route path="/programmer">
+            <ProgrammerPage />
+          </Route>
+          <Route path="/characters">
+            <CharactersPage />
           </Route>
         </Switch>
       </PageContainer>
