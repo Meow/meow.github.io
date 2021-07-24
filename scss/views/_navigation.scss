@@ -10,16 +10,16 @@
   & > a {
     color: var(--link-color);
   }
+}
 
-  &__link {
-    flex-grow: 1;
-    padding: 0 var(--padding-normal);
-    border-left: 1px solid var(--accent-border-color);
-    border-right: 1px solid var(--accent-dark-color);
-    text-align: center;
+.navigation__link {
+  flex-grow: 1;
+  padding: 0 var(--padding-normal);
+  border-left: 1px solid var(--accent-border-color);
+  border-right: 1px solid var(--accent-dark-color);
+  text-align: center;
 
-    &:hover {
-      background-color: var(--accent-dark-color);
-    }
+  &:hover {
+    background-color: var(--accent-dark-color);
   }
 }

@@ -8,8 +8,11 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 @import "common/colors";
 @import "common/measurements";
+@import "common/mixins";
 
 @import "layouts/base";
 @import "layouts/block";
+@import "layouts/mobile";
+@import "layouts/page";
 
 @import "views/navigation";

@@ -1,0 +1,9 @@
+.content {
+  padding: var(--padding-normal);
+}
+
+@include if-mobile {
+  .content {
+    padding: var(--padding-small);
+  }
+}
