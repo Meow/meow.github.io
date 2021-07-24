@@ -24,7 +24,8 @@ module.exports = {
     alias: {
       common: path.resolve(__dirname, 'scss/common/'),
       layouts: path.resolve(__dirname, 'scss/layouts/'),
-      views: path.resolve(__dirname, 'scss/views/')
+      views: path.resolve(__dirname, 'scss/views/'),
+      components: path.resolve(__dirname, 'js/components/')
     },
     extensions: ['*', '.js', '.jsx'],
   },

@@ -15,6 +15,8 @@ $max-tablet-width: 1000px;
   --padding-large: 2em;
 
   --navigation-height: 48px;
+
+  --min-cell-width: 80px;
   
   --max-phone-width: #{$max-phone-width};
   --max-tablet-width: #{$max-tablet-width};

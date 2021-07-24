@@ -10,7 +10,7 @@ $information-color: #436a76;
 @mixin define-color($name, $variable) {
   --#{$name}-color: #{$variable};
   --#{$name}-border-color: #{lighten($variable, 30%)};
-  --#{$name}-dark-color: #{darken($variable, 15%)};
+  --#{$name}-dark-color: #{darken($variable, 12%)};
 }
 
 :root {
