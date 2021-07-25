@@ -29,6 +29,12 @@
   }
 }
 
+@include if-phone {
+  .projects th {
+    padding: var(--padding-small);
+  }
+}
+
 @include language(expert, danger);
 @include language(advanced, warning);
 @include language(intermediate, success);

@@ -18,7 +18,7 @@ function ProgrammerProjects(_props) {
       icon="fa-users"
       type="Team"
       info="Website (Ruby / Elixir)"
-      desc="An imageboard site focused on My Little Pony cartoon. Hired as developer and assuming lead developer position in 2020, performing duties of a system administrator."
+      desc="An imageboard site focused on My Little Pony cartoon. Hired as a developer and assuming the lead developer role in 2020, performing duties of a system administrator."
       link="https://github.com/derpibooru/philomena"
     />
     <ProgrammerProject

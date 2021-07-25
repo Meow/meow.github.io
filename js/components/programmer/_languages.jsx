@@ -5,7 +5,7 @@ function ProgrammerLanguages(_props) {
     <tr>
       <th><i class="fa fa-code"></i> Language</th>
       <th><i class="fa fa-clock"></i> Started</th>
-      <th><i class="fa fa-dumbbell"></i> Proficiency</th>
+      <th><i class="fa fa-dumbbell"></i> Skill</th>
     </tr>
     <tr className="language--expert">
       <td>Lua</td>
@@ -38,7 +38,7 @@ function ProgrammerLanguages(_props) {
       <td>Expert</td>
     </tr>
     <tr className="language--advanced">
-      <td>SQL (MySQL, PostgreSQL, SQLite)</td>
+      <td>SQL (PostgreSQL, MySQL, SQLite)</td>
       <td>2016</td>
       <td>Advanced</td>
     </tr>
