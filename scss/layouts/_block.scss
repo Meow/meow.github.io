@@ -34,6 +34,11 @@
   padding: var(--padding-normal);
 }
 
+.block__content--centered {
+  display: flex;
+  justify-content: center;
+}
+
 @include block-color(danger);
 @include block-color(warning);
 @include block-color(success);

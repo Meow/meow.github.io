@@ -18,6 +18,15 @@ a {
   color: var(--accent-border-color);
 }
 
+.logo_link {
+  color: var(--text-color);
+  font-size: var(--logo-link-size);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
 .nowrap {
   white-space: nowrap;
 }
