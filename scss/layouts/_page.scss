@@ -1,5 +1,7 @@
 .content {
   padding: var(--padding-normal);
+  margin: auto;
+  max-width: var(--max-tablet-width);
 }
 
 @include if-mobile {
