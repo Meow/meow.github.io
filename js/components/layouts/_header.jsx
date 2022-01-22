@@ -7,8 +7,8 @@ function Header(_props) {
   useEffect(() => { parallaxInit(textRef.current); }, []);
 
   return <div className="header">
-    <div class="parallax__background"></div>
-    <div class="parallax__text" ref={textRef}>Nighty Cloud</div>
+    <div className="parallax__background"></div>
+    <div className="parallax__text" ref={textRef}>Nighty Cloud</div>
   </div>;
 }
 

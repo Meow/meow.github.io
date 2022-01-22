@@ -1,17 +1,3 @@
-// Throttle a function so it only executes once every <delay>ms.
-function throttle(fn, delay) {
-  let timeout = null;
-
-  return (e) => {
-    if (timeout) return;
-
-    timeout = setTimeout(() => {
-      fn(e);
-      timeout = null;
-    }, delay)
-  }
-}
-
 // Linear interpolation.
 function lerp(delta, from, to) {
   if (delta >= 1)
@@ -48,12 +34,11 @@ function parallaxInit(node, delta = 0.2, constrain = null, multiplier = 1) {
   }
 
   // Add event listeners for potential user input movement (mouse, touch).
-  // Throttle function so expensive calculations don't run too often.
-  document.addEventListener("mousemove", throttle((e) => { listenerFunc(e.pageX, e.pageY); }, 50));
-  document.addEventListener("touchstart", throttle((e) => { listenerFunc(e.touches[0].pageX, e.touches[0].pageY); }, 50));
-  document.addEventListener("touchmove", throttle((e) => { listenerFunc(e.touches[0].pageX, e.touches[0].pageY); }, 50));
+  document.addEventListener("mousemove", (e) => { listenerFunc(e.pageX, e.pageY); });
+  document.addEventListener("touchstart", (e) => { listenerFunc(e.touches[0].pageX, e.touches[0].pageY); });
+  document.addEventListener("touchmove", (e) => { listenerFunc(e.touches[0].pageX, e.touches[0].pageY); });
 
-  // Update actual node offsets at approximately 60FPS.
+  // Update actual node offsets.
   const updaterFunc = () => {
     if (constrain != "vertical")
       currentLeft = lerp(delta, currentLeft, targetLeft);

@@ -11,6 +11,7 @@ import Index from "./components/index.jsx";
 import ArtistPage from "./components/artist/index.jsx";
 import CharactersPage from "./components/characters/index.jsx";
 import ProgrammerPage from "./components/programmer/index.jsx";
+import ContactPage from "./components/contact/index.jsx";
 
 export default function Routes() {
   return (
@@ -25,6 +26,9 @@ export default function Routes() {
           </Route>
           <Route path="/pages/characters">
             <CharactersPage />
+          </Route>
+          <Route path="/pages/contact">
+            <ContactPage />
           </Route>
           <Route path="/">
             <Index />

@@ -6,8 +6,7 @@ function Navigation(_props) {
   return <div className="navigation">
     <Link to="/" icon="fa-info-circle" name="About me" component={NavigationLink} />
     <Link to="/pages/programmer" icon="fa-code" name="Programmer" component={NavigationLink} />
-    <Link to="/pages/artist" icon="fa-paint-brush" name="Artist" component={NavigationLink} />
-    <Link to="/pages/characters" icon="fa-dog" name="My characters" component={NavigationLink} />
+    <Link to="/pages/contact" icon="fa-envelope" name="Contact" component={NavigationLink} />
   </div>;
 }
 

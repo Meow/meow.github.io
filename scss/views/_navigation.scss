@@ -1,9 +1,10 @@
 .navigation {
   display: grid;
   line-height: var(--navigation-height);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   box-shadow: 0 -1px var(--accent-color) inset;
   align-self: center;
+  width: 100%;
   max-width: var(--max-tablet-width);
 
   & > a {
