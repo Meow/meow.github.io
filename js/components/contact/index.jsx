@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactPage(_props) {
   return <div className="description">
-    <h1><i class="fa fa-envelope"></i> Contact me</h1>
+    <h1><i className="fa fa-envelope"></i> Contact me</h1>
     <p>I am typically contactable on all of my social media. If you wish to contact me for a specific purpose, please read further.</p>
     
     <h3><i className="fa fa-question"></i> General questions</h3>
