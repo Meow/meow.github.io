@@ -54,7 +54,7 @@ function parallaxInit(node, delta = 0.2, constrain = null, multiplier = 1) {
   document.addEventListener("touchmove", throttle((e) => { listenerFunc(e.touches[0].pageX, e.touches[0].pageY); }, 50));
 
   // Update actual node offsets at approximately 60FPS.
-  setInterval(() => {
+  const updaterFunc = () => {
     if (constrain != "vertical")
       currentLeft = lerp(delta, currentLeft, targetLeft);
 
@@ -62,7 +62,11 @@ function parallaxInit(node, delta = 0.2, constrain = null, multiplier = 1) {
       currentTop = lerp(delta, currentTop, targetTop);
 
     node.style.transform = `translate(${currentLeft}px, ${currentTop}px)`;
-  }, 16);
+
+    window.requestAnimationFrame(updaterFunc);
+  };
+
+  updaterFunc();
 
   return node;
 }
