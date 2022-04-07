@@ -39,6 +39,15 @@ function ProgrammerProjects(_props) {
         desc="An imageboard running the same software as Derpibooru, but focused on the Furry fandom. Performing duties of the head admin, lead developer and sysadmin."
         link="https://github.com/furbooru/philomena"
       />
+      <ProgrammerProject
+        name="Space Chaos"
+        time="2022"
+        icon="fa-graduation-cap"
+        type="University"
+        info="GameMaker Language"
+        desc="A simple 2D sidescroller game where a space ship shoots innocent creatures. Or are they so innocent?"
+        link="https://github.com/Meow/spacegame"
+      />
     </tbody>
   </table>;
 }
