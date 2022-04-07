@@ -10,7 +10,7 @@ function ContactPage(_props) {
     <p><strong>luna [at] nighty.cloud</strong></p>
     
     <h3><i className="fa fa-paint-brush"></i> Art, collabs, trades, commissions</h3>
-    <p>Please <strong>do not contact me at all</strong> about any art-related questions. I do not do art at this time. And hopefully never will.</p>
+    <p>Please <strong>do not contact me at all</strong> about any art-related questions. I do not do art for others at this time.</p>
 
     <h3><i className="fa fa-code"></i> Project recruitment, employment offers, business inquiries</h3>
     <p>Please use the E-Mail below to contact me for purposes of recruitment into projects, offers of employment, or other business-related matters. Please make sure the topic of your message reflects the matters you wish to discuss precisely, and begins with "ATTN: ".</p>
