@@ -11,8 +11,9 @@
 
 .navigation__block {
   align-self: center;
-  width: 100%;
+  width: 99%;
   max-width: var(--max-tablet-width);
+  margin: var(--padding-normal);
 }
 
 .navigation__link {

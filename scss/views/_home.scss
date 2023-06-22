@@ -4,6 +4,24 @@
   gap: var(--padding-normal);
 }
 
+@include if-phone {
+  .avatar__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .avatar, .avatar__description {
+    margin: auto;
+    text-align: center;
+  }
+
+  .avatar__description p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: var(--padding-normal);
+  }
+}
+
 .avatar {
   height: var(--avatar-size);
   width: var(--avatar-size);
