@@ -1,0 +1,39 @@
+.avatar__container {
+  display: grid;
+  grid-template-columns: var(--avatar-size) auto;
+  gap: var(--padding-normal);
+}
+
+.avatar {
+  height: var(--avatar-size);
+  width: var(--avatar-size);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.avatar > img {
+  height: var(--avatar-size);
+  width: var(--avatar-size);
+}
+
+.avatar__description > h1, .avatar__description > h3 {
+  border: 0;
+  padding-top: 0;
+  margin: 0;
+}
+
+.avatar__description p {
+  padding: 0 !important;
+}
+
+.description p {
+  padding: 0 var(--padding-normal);
+
+  &:first-child {
+    padding-top: var(--padding-normal);
+  }
+
+  &:last-child {
+    padding-bottom: var(--padding-normal);
+  }
+}

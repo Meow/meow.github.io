@@ -1,5 +1,7 @@
+const IgnoreEmitPlugin = require("ignore-emit-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const path = require('path');
-const webpack = require('webpack');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 8080;
@@ -8,6 +10,7 @@ module.exports = {
   mode: isDevelopment ? 'development' : 'production',
   entry: {
     'application.js': './js/application.js',
+    'application': './scss/application.scss'
   },
   output: {
     filename: '[name]',
@@ -40,6 +43,17 @@ module.exports = {
           outputPath: './fonts',
           publicPath: './fonts',
         },
+        dependency: { not: ['url'] },
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|webp|webm|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: './assets',
+          publicPath: './assets',
+        },
+        dependency: { not: ['url'] },
       },
       {
         test: /index.html$/,
@@ -56,24 +70,25 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /application\.scss$/,
+        test: /\.scss$/,
         use: [
+          MiniCssExtractPlugin.loader,
           {
-            loader: 'file-loader',
+            loader: 'css-loader',
             options: {
-              sourceMaps: isDevelopment,
-              name: '[name].css',
-              outputPath: '.',
-              publicPath: '.',
+              sourceMap: isDevelopment,
+              url: {
+                filter: (url, _resourcePath) => {
+                  return !url.startsWith('/');
+                }
+              }
             },
           },
-          { loader: 'extract-loader', options: { sourceMaps: isDevelopment } },
-          { loader: 'css-loader', options: { sourceMap: isDevelopment } },
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: isDevelopment,
               postcssOptions: {
+                sourceMap: isDevelopment,
                 plugins: [
                   require('autoprefixer')(),
                 ],
@@ -82,7 +97,15 @@ module.exports = {
               }
             },
           },
-          { loader: 'sass-loader', options: { sourceMap: isDevelopment } },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: isDevelopment,
+              sassOptions: {
+                quietDeps: true
+              }
+            }
+          },
         ],
       },
     ],
@@ -92,5 +115,12 @@ module.exports = {
     port: port,
     historyApiFallback: true,
     open: true
-  }
+  },
+  plugins: [
+    new IgnoreEmitPlugin(/css\/.*(?<!css)$/),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css'
+    })
+  ]
 };

@@ -2,20 +2,24 @@
   display: grid;
   line-height: var(--navigation-height);
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 -1px var(--accent-color) inset;
   align-self: center;
-  width: 100%;
-  max-width: var(--max-tablet-width);
 
   & > a {
     color: var(--link-color);
   }
 }
 
+.navigation__block {
+  align-self: center;
+  width: 100%;
+  max-width: var(--max-tablet-width);
+}
+
 .navigation__link {
   flex-grow: 1;
-  padding: 0 var(--padding-normal);
+  padding: 0 var(--padding-small);
   text-align: center;
+  border-radius: var(--border-radius-inner);
 
   &:hover {
     background-color: var(--accent-dark-color);

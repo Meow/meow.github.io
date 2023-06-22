@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavigationLink from "./_navigation_link";
 
 function Navigation(_props) {
-  return <div className="navigation">
-    <Link to="/" icon="fa-info-circle" name="About me" component={NavigationLink} />
-    <Link to="/pages/programmer" icon="fa-code" name="Programmer" component={NavigationLink} />
-    <Link to="/pages/contact" icon="fa-envelope" name="Contact" component={NavigationLink} />
+  return <div className="block navigation__block">
+    <div className="block__content navigation">
+      <Link to="/" className="navigation__link"><i className={`fa fa-info-circle`}></i><span className="hidden--phone"> About Me</span></Link>
+      <Link to="/pages/programmer" className="navigation__link"><i className={`fa fa-code`}></i><span className="hidden--phone"> Programmer</span></Link>
+      <Link to="/pages/contact" className="navigation__link"><i className={`fa fa-envelope`}></i><span className="hidden--phone"> Contact</span></Link>
+    </div>
   </div>;
 }
 

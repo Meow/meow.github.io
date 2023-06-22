@@ -4,7 +4,7 @@ function ProgrammerLanguages(_props) {
   return <table className="projects">
     <thead>
       <tr>
-        <th><i className="fa fa-code"></i> Language</th>
+        <th></th>
         <th><i className="fa fa-clock"></i> Started</th>
         <th><i className="fa fa-dumbbell"></i> Skill</th>
       </tr>
@@ -50,15 +50,20 @@ function ProgrammerLanguages(_props) {
         <td>2017</td>
         <td>Expert</td>
       </tr>
-      <tr className="language--beginner">
+      <tr className="language--intermediate">
         <td>Rust</td>
         <td>2019</td>
-        <td>Beginner</td>
+        <td>Intermediate</td>
       </tr>
       <tr className="language--intermediate">
         <td>Elixir</td>
         <td>2020</td>
         <td>Intermediate</td>
+      </tr>
+      <tr className="language--beginner">
+        <td>Typescript</td>
+        <td>2023</td>
+        <td>Beginner</td>
       </tr>
     </tbody>
   </table>;

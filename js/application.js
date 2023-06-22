@@ -1,10 +1,9 @@
 // .keep
-import "../scss/application.scss";
 import "../index.html";
 
-import { parallaxInit } from "./lib/parallax.js";
+import AppRoutes from "./router.jsx";
+import { createRoot } from  "react-dom/client";
 
-import Routes from "./router.jsx";
-import ReactDOM from  "react-dom";
+const root = createRoot(document.getElementById('root'));
 
-ReactDOM.render(Routes(), document.getElementById('root'));
+root.render(AppRoutes());

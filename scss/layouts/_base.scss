@@ -36,6 +36,17 @@ a {
   flex-direction: column;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: var(--padding-normal);
+  line-height: 1.35;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @mixin header-tag($el) {
   #{$el} {
     font-weight: bold;

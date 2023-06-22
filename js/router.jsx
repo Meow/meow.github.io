@@ -1,7 +1,7 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
@@ -13,27 +13,17 @@ import CharactersPage from "./components/characters/index.jsx";
 import ProgrammerPage from "./components/programmer/index.jsx";
 import ContactPage from "./components/contact/index.jsx";
 
-export default function Routes() {
+export default function AppRoutes() {
   return (
     <Router>
       <PageContainer>
-        <Switch>
-        <Route path="/pages/artist">
-            <ArtistPage />
-          </Route>
-          <Route path="/pages/programmer">
-            <ProgrammerPage />
-          </Route>
-          <Route path="/pages/characters">
-            <CharactersPage />
-          </Route>
-          <Route path="/pages/contact">
-            <ContactPage />
-          </Route>
-          <Route path="/">
-            <Index />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/pages/artist" element={<ArtistPage />} />
+          <Route path="/pages/programmer" element={<ProgrammerPage />} />
+          <Route path="/pages/characters" element={<CharactersPage />} />
+          <Route path="/pages/contact" element={<ContactPage />} />
+          <Route path="/" element={<Index />} />
+        </Routes>
       </PageContainer>
     </Router>
   );

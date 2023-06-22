@@ -2,7 +2,6 @@
   .language--#{$type} {
     background: var(--#{$color}-color);
     border-bottom: 1px solid var(--#{$color}-border-color);
-    box-shadow: 0 -1px var(--#{$color}-dark-color) inset;
 
     &:last-child {
       border: 0;
@@ -19,19 +18,19 @@
   & td {
     border: 0;
     min-width: var(--min-cell-width);
-    padding: var(--padding-small);
+    padding: var(--padding-normal);
     text-align: left;
   }
 
   & th {
-    padding: var(--padding-normal);
+    padding: var(--padding-normal) 0;
     text-align: left;
   }
 }
 
 @include if-phone {
   .projects th {
-    padding: var(--padding-small);
+    padding: var(--padding-small) 0;
   }
 }
 

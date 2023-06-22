@@ -16,6 +16,7 @@ $information-color: #436a76;
 :root {
   --text-color: #{$text-color};
   --background-color: #{$background-color};
+  --background-light-color: #{darken(desaturate($accent-color, 12%), 23%)};
   --link-color: #{lighten($accent-color, 50%)};
 
   @include define-color(accent, $accent-color);
