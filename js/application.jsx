@@ -1,6 +1,4 @@
-// .keep
-import "../index.html";
-
+import "../scss/application.scss";
 import AppRoutes from "./router.jsx";
 import { createRoot } from  "react-dom/client";
 

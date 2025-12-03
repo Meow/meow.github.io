@@ -11,7 +11,7 @@ class Index extends React.Component {
             </div>
             <div className="avatar__description">
               <h1>Nighty Cloud</h1>
-              <h3>Luna • 24 • F • Germany</h3>
+              <h3>Luna • 26 • F • Germany</h3>
               <p>Artist, programmer, <s>somewhat crappy</s> web designer, witch of technical operations, part-time fox, full-time chaotic neutral, full stack (whatever that means), fully stacked, stacks the stacks of stacky stuffs, amateur progamer on sundays, apparently also electrician if half of your charger gets stuck in the power socket.</p>
             </div>
           </div>
