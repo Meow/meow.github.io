@@ -4,7 +4,7 @@
   max-width: var(--max-tablet-width);
 }
 
-@include if-mobile {
+@mixin if-mobile {
   .content {
     padding: var(--padding-small);
   }

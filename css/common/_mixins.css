@@ -1,0 +1,23 @@
+@define-mixin if-desktop {
+  @media (min-width: 1001px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin if-tablet {
+  @media (max-width: 1000px) and (min-width: 701px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin if-phone {
+  @media (max-width: 700px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin if-mobile {
+  @media (max-width: 1000px) {
+    @mixin-content;
+  }
+}

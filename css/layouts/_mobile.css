@@ -2,25 +2,25 @@
   display: none !important;
 }
 
-@include if-desktop {
+@mixin if-desktop {
   .hidden--desktop {
     display: none !important;
   }
 }
 
-@include if-mobile {
+@mixin if-mobile {
   .hidden--mobile {
     display: none !important;
   }
 }
 
-@include if-phone {
+@mixin if-phone {
   .hidden--phone {
     display: none !important;
   }
 }
 
-@include if-tablet {
+@mixin if-tablet {
   .hidden--tablet {
     display: none !important;
   }

@@ -3,10 +3,10 @@
   line-height: var(--navigation-height);
   grid-template-columns: repeat(3, 1fr);
   align-self: center;
+}
 
-  & > a {
-    color: var(--link-color);
-  }
+.navigation > a {
+  color: var(--link-color);
 }
 
 .navigation__block {
@@ -21,10 +21,10 @@
   padding: 0 var(--padding-small);
   text-align: center;
   border-radius: var(--border-radius-inner);
+}
 
-  &:hover {
-    background-color: var(--accent-dark-color);
-  }
+.navigation__link:hover {
+  background-color: var(--accent-dark-color);
 }
 
 .header {

@@ -1,0 +1,20 @@
+@import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/regular.css";
+@import "@fortawesome/fontawesome-free/css/solid.css";
+@import "@fortawesome/fontawesome-free/css/brands.css";
+
+@import "normalize.css/normalize.css";
+
+@import "./common/_colors.css";
+@import "./common/_measurements.css";
+@import "./common/_mixins.css";
+
+@import "./layouts/_base.css";
+@import "./layouts/_block.css";
+@import "./layouts/_mobile.css";
+@import "./layouts/_page.css";
+
+@import "./views/_home.css";
+@import "./views/_navigation.css";
+@import "./views/_parallax.css";
+@import "./views/_programmer.css";

@@ -26,6 +26,6 @@ $max-tablet-width: 1000px;
 
   --min-cell-width: 80px;
   
-  --max-phone-width: #{$max-phone-width};
-  --max-tablet-width: #{$max-tablet-width};
+  --max-phone-width: $max-phone-width;
+  --max-tablet-width: $max-tablet-width;
 }

@@ -11,16 +11,18 @@
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.28.5",
     "@babel/preset-react": "^7.28.5",
+    "@csstools/postcss-relative-color-syntax": "^3.0.12",
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@vitejs/plugin-react": "^5.1.1",
     "autoprefixer": "^10.4.22",
-    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1",
     "postcss": "^8.5.6",
-    "postcss-scss": "^4.0.9",
+    "postcss-mixins": "^12.1.2",
+    "postcss-simple-vars": "^7.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.2",
-    "sass": "^1.94.2",
     "vite": "^7.2.6"
-  }
+  },
+  "type": "module"
 }
