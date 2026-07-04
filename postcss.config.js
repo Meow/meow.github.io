@@ -3,6 +3,6 @@ export default {
     "postcss-mixins": {},
     "postcss-simple-vars": {},
     "@csstools/postcss-relative-color-syntax": {},
-    "autoprefixer": {}
+    autoprefixer: {},
   },
 };

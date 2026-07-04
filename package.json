@@ -1,6 +1,7 @@
 {
   "license": "MIT",
   "scripts": {
+    "fmt": "prettier --write .",
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -14,6 +15,7 @@
     "postcss": "^8.5.16",
     "postcss-mixins": "^12.1.2",
     "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.9.4",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1",
