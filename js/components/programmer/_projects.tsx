@@ -23,14 +23,6 @@ function ProgrammerProjects() {
           link="https://github.com/derpibooru/philomena"
         />
         <ProgrammerProject
-          name="Timetable Display"
-          time="2019"
-          icon="fa-briefcase"
-          type="Work"
-          info="Website (Ruby)"
-          desc="A web app to display school timetable changes, as well as allow teachers to view more detailed subject-dependent timetables, and access internal documents."
-        />
-        <ProgrammerProject
           name="Furbooru"
           time="2020-present"
           icon="fa-users"
@@ -47,6 +39,50 @@ function ProgrammerProjects() {
           info="GameMaker Language"
           desc="A simple 2D sidescroller game where a space ship shoots innocent creatures. Or are they so innocent?"
           link="https://github.com/Meow/spacegame"
+        />
+        <ProgrammerProject
+          name="Assemblia"
+          time="2022"
+          icon="fa-graduation-cap"
+          type="University"
+          info="C, C++, Lua"
+          desc="A 2D game written from scratch in C (engine) and C++ (game logic) with Lua scripting. Uses Vulkan for rendering. Part of a university assignment."
+          link="https://github.com/Meow/assemblia"
+        />
+        <ProgrammerProject
+          name="Pathfinding"
+          time="2022"
+          icon="fa-graduation-cap"
+          type="University"
+          info="Rust"
+          desc="A simple game written as exercise in implementing pathfinding and sorting algorithms in context of videogames, as well as an exercise in Rust programming. Uses the bevy engine."
+          link="https://github.com/Meow/pathfinding"
+        />
+        <ProgrammerProject
+          name="ML Chess"
+          time="2023"
+          icon="fa-graduation-cap"
+          type="University"
+          info="Python + PyTorch"
+          desc="A chess engine that uses a homemade neural network based on Lichess public data to evaluate board positions and make decisions. Written as part of a university assignment."
+          link="https://github.com/Meow/mlchess"
+        />
+        <ProgrammerProject
+          name="POS System"
+          time="2023-present"
+          icon="fa-user"
+          type="Personal"
+          info="Ruby on Rails, Javascript, PostgreSQL"
+          desc="A point-of-sale system for a convention art shop business, built with Ruby on Rails and PostgreSQL. Closed source for now."
+        />
+        <ProgrammerProject
+          name="AsymmetricVR"
+          time="2024"
+          icon="fa-graduation-cap"
+          type="University"
+          info="Unreal Engine C++"
+          desc="An attempt at creating a VR game project template for the university bachelor thesis. The game is a simple asymmetrical multiplayer game where one player is in VR and the other is on a PC."
+          link="https://github.com/Meow/AsymmetricVR"
         />
       </tbody>
     </table>

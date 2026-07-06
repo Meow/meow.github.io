@@ -8,7 +8,7 @@ function ProgrammerLanguages() {
             <i className="fa fa-clock"></i> Started
           </th>
           <th>
-            <i className="fa fa-dumbbell"></i> Skill
+            <i className="fa fa-dumbbell"></i> Skill Level
           </th>
         </tr>
       </thead>
@@ -19,7 +19,12 @@ function ProgrammerLanguages() {
           <td>Expert</td>
         </tr>
         <tr className="language--expert">
-          <td>HTML + CSS</td>
+          <td>HTML</td>
+          <td>2012</td>
+          <td>Expert</td>
+        </tr>
+        <tr className="language--expert">
+          <td>CSS (plain)</td>
           <td>2012</td>
           <td>Expert</td>
         </tr>
@@ -44,9 +49,14 @@ function ProgrammerLanguages() {
           <td>Expert</td>
         </tr>
         <tr className="language--advanced">
-          <td>SQL (PostgreSQL, MySQL, SQLite)</td>
+          <td>SQL (MySQL, SQLite)</td>
           <td>2016</td>
           <td>Advanced</td>
+        </tr>
+        <tr className="language--expert">
+          <td>SQL (PostgreSQL)</td>
+          <td>2016</td>
+          <td>Expert</td>
         </tr>
         <tr className="language--expert">
           <td>Ruby</td>
@@ -58,15 +68,20 @@ function ProgrammerLanguages() {
           <td>2019</td>
           <td>Intermediate</td>
         </tr>
-        <tr className="language--intermediate">
+        <tr className="language--advanced">
           <td>Elixir</td>
           <td>2020</td>
-          <td>Intermediate</td>
+          <td>Advanced</td>
         </tr>
-        <tr className="language--beginner">
+        <tr className="language--intermediate">
           <td>Typescript</td>
           <td>2023</td>
-          <td>Beginner</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr className="language--expert">
+          <td>CSS (PostCSS)</td>
+          <td>2024</td>
+          <td>Expert</td>
         </tr>
       </tbody>
     </table>

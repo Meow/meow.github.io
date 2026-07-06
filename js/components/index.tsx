@@ -36,18 +36,19 @@ class Index extends React.Component {
               ultimately moving on to web development. In 2017 I was invited to
               work on Derpibooru, an image hosting site dedicated to the My
               Little Pony cartoon, which caused my web development and sysadmin
-              skills to skyrocket, turning me into a fairly competent systems
-              administrator and web developer... hopefully. I'm experienced with
-              Ruby, Lua, C (and coincidentally C++), as well as most of web dev
-              stack (CSS, HTML, SQL, and such).
+              skills to develop at an exponential pace, turning me into a fairly
+              competent systems administrator and web developer, as well as
+              giving me very valuable hands-on DevOps experience. I'm familiar
+              with Ruby, PHP, Lua, C/C++, Rust, as well as most of web dev stack
+              (CSS, HTML, SQL, JavaScript, etc).
             </p>
             <p>
-              Before web development, game development was my passion, and it
-              still remains one of my "guilty pleasures". I've been coding some
-              simple personal 2D games, drawing sprites and making silly
-              stories. I've been looking to also get into VR game development,
-              but have been postponing this plan until Source 2 SDK becomes
-              available to the general public.
+              Coding is one of my primary skills, and I enjoy tinkering and
+              learning new things. I am always looking for new challenges and
+              opportunities. I am no stranger to learning on the job and
+              thinking on my feet. Even if I don't know something when I start,
+              I will make it a goal to learn it and become proficient at it. I
+              am a fast learner!
             </p>
           </div>
         </div>
@@ -64,22 +65,25 @@ class Index extends React.Component {
               usually do manage to do it at least once a week.
             </p>
             <p>
-              I have always had a love and hate relationship with art. On one
-              hand, I consider my art nice looking and I'm happy about any
-              self-improvement I achieve, but on the other any job prospects for
-              artists are in very short supply, and my situation would be dire
-              if I focused exclusively on making artwork. Additionally I am
-              quite sensitive to negative feedback about my art, so it's
-              probably best if I don't publish anything I am actually proud of.
+              I have always had a deep passion for art and drawing, and have
+              been striving to improve my skills over the years. Social media
+              following has never really been of priority to me, I like to draw
+              for myself and my own fun, not for some number on a website that
+              can very well decide that furries aren't okay and delete my
+              account and all my progress with it. Nevertheless, I always strive
+              to improve the quality of my art and learn new techniques. I am
+              open to constructive criticism and feedback!
             </p>
             <p>
-              There are people who like my art, there are people who told me I
-              am horrible at it and would never amount to anything. Overall, I
-              am just tired of not progressing any further. My art feels like
-              it's in a state of stagnation and I lack talent at this moment to
-              bring it around. Perhaps one day I'll be able to try new things
-              and improve a lot, but I simply don't have time for that right
-              now.
+              Thanks to my art skills, I do have a keen eye for design and
+              colors. I have spent some time learning color theory and design
+              principles. Composition, perspective, lighting and other aspects
+              of art theory come naturally to me. This has indirectly helped me
+              when designing websites and user interfaces. I am familiar with
+              the principles of design and can apply them to my work. I am also
+              familiar with accessibility and usability principles, and always
+              strive to make sure my websites are readable and accessible by
+              everyone.
             </p>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import ProgrammerProjects from "./_projects";
 import ProgrammerLanguages from "./_languages";
+import ProgrammerSkills from "./_skills";
+import ProgrammerFrameworks from "./_frameworks";
 
 function ProgrammerPage() {
   return (
@@ -40,10 +42,56 @@ function ProgrammerPage() {
       </div>
       <div className="block">
         <div className="block__header">
+          <i className="fa fa-question"></i> Skill Level Explanation
+        </div>
+        <div className="block__content">
+          <ul>
+            <li>
+              <strong>Beginner</strong> - I have some experience with this, but
+              not enough to be considered competent. I am still learning! It is
+              by learning that one improves and becomes an expert.
+            </li>
+            <li>
+              <strong>Intermediate</strong> - I am competent with this, but not
+              super comfortable with it yet. I can get the job done, but it may
+              take me a while to figure out the best way to do it.
+            </li>
+            <li>
+              <strong>Advanced</strong> - I am very competent with this, and
+              comfortable enough to work with it on a daily basis. I can get the
+              job done efficiently. However, some knowledge is not yet entirely
+              intuitive to me, and I might be slow at some things.
+            </li>
+            <li>
+              <strong>Expert</strong> - I am extremely competent and comfortable
+              with this, and could probably teach it to others. This is my area
+              of expertise, and most concepts are entirely intuitive to me.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="block">
+        <div className="block__header">
           <i className="fa fa-code"></i> Languages
         </div>
         <div className="block__content">
           <ProgrammerLanguages />
+        </div>
+      </div>
+      <div className="block">
+        <div className="block__header">
+          <i className="fa fa-code"></i> Skills
+        </div>
+        <div className="block__content">
+          <ProgrammerSkills />
+        </div>
+      </div>
+      <div className="block">
+        <div className="block__header">
+          <i className="fa fa-code"></i> Frameworks
+        </div>
+        <div className="block__content">
+          <ProgrammerFrameworks />
         </div>
       </div>
       <div className="block block--information">
