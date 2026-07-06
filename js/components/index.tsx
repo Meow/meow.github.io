@@ -12,7 +12,7 @@ class Index extends React.Component {
               </div>
               <div className="avatar__description">
                 <h1>Nighty Cloud</h1>
-                <h3>Luna • 27 • F • Germany</h3>
+                <h3>Luna Fox • 27 • F • Germany</h3>
                 <p>
                   Artist, programmer, <s>somewhat crappy</s> web designer, witch
                   of technical operations, part-time fox, full-time chaotic
