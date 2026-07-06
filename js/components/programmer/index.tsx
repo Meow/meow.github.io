@@ -2,6 +2,7 @@ import ProgrammerProjects from "./_projects";
 import ProgrammerLanguages from "./_languages";
 import ProgrammerSkills from "./_skills";
 import ProgrammerFrameworks from "./_frameworks";
+import ProgrammerTech from "./_technologies";
 import SkillLevel from "./_skill_level";
 
 function ProgrammerPage() {
@@ -18,18 +19,19 @@ function ProgrammerPage() {
             ultimately moving on to web development. In 2017 I was invited to
             work on Derpibooru, an image hosting site dedicated to the My Little
             Pony cartoon, which caused my web development and sysadmin skills to
-            skyrocket, turning me into a fairly competent systems administrator
-            and web developer... hopefully. I'm experienced with Ruby, Lua, C
-            (and coincidentally C++), as well as most of web dev stack (CSS,
-            HTML, SQL, and such).
+            develop at an exponential pace, turning me into a fairly competent
+            systems administrator and web developer, as well as giving me very
+            valuable hands-on DevOps experience. I'm familiar with Ruby, PHP,
+            Lua, C/C++, Rust, as well as most of web dev stack (CSS, HTML, SQL,
+            JavaScript, etc).
           </p>
           <p>
-            Before web development, game development was my passion, and it
-            still remains one of my "guilty pleasures". I've been coding some
-            simple personal 2D games, drawing sprites and making silly stories.
-            I've been looking to also get into VR game development, but have
-            been postponing this plan until Source 2 SDK becomes available to
-            the general public.
+            Coding is one of my primary skills, and I enjoy tinkering and
+            learning new things. I am always looking for new challenges and
+            opportunities. I am no stranger to learning on the job and thinking
+            on my feet. Even if I don't know something when I start, I will make
+            it a goal to learn it and become proficient at it. I am a fast
+            learner!
           </p>
         </div>
       </div>
@@ -93,6 +95,14 @@ function ProgrammerPage() {
       </div>
       <div className="block">
         <div className="block__header">
+          <i className="fa fa-code"></i> Frameworks
+        </div>
+        <div className="block__content">
+          <ProgrammerFrameworks />
+        </div>
+      </div>
+      <div className="block">
+        <div className="block__header">
           <i className="fa fa-code"></i> Skills
         </div>
         <div className="block__content">
@@ -101,10 +111,10 @@ function ProgrammerPage() {
       </div>
       <div className="block">
         <div className="block__header">
-          <i className="fa fa-code"></i> Frameworks
+          <i className="fa fa-code"></i> Technologies
         </div>
         <div className="block__content">
-          <ProgrammerFrameworks />
+          <ProgrammerTech />
         </div>
       </div>
       <div className="block block--information">
