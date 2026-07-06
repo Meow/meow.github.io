@@ -107,6 +107,20 @@ function ProgrammerLanguages() {
           </td>
         </tr>
         <tr className="language--intermediate">
+          <td>Java</td>
+          <td>2023</td>
+          <td>
+            <SkillLevel level="intermediate" />
+          </td>
+        </tr>
+        <tr className="language--intermediate">
+          <td>Kotlin</td>
+          <td>2023</td>
+          <td>
+            <SkillLevel level="intermediate" />
+          </td>
+        </tr>
+        <tr className="language--intermediate">
           <td>Python</td>
           <td>2023</td>
           <td>

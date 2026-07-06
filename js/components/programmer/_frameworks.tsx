@@ -30,14 +30,6 @@ function ProgrammerFrameworks() {
             <SkillLevel level="intermediate" />
           </td>
         </tr>
-        <tr className="language--expert">
-          <td>
-            NodeJS (not really a framework but I thought I'd put this here)
-          </td>
-          <td>
-            <SkillLevel level="expert" />
-          </td>
-        </tr>
         <tr className="language--advanced">
           <td>React</td>
           <td>

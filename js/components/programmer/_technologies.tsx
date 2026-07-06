@@ -49,6 +49,12 @@ function ProgrammerTech() {
           </td>
         </tr>
         <tr className="language--expert">
+          <td>NodeJS</td>
+          <td>
+            <SkillLevel level="expert" />
+          </td>
+        </tr>
+        <tr className="language--expert">
           <td>Docker</td>
           <td>
             <SkillLevel level="expert" />
