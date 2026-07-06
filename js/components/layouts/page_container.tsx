@@ -1,8 +1,12 @@
-import React from "react";
+import type { ReactNode } from "react";
 import Navigation from "./_navigation";
 import Header from "./_header";
 
-function PageContainer(props) {
+interface PageContainerProps {
+  children: ReactNode;
+}
+
+function PageContainer(props: PageContainerProps) {
   return (
     <div className="container">
       <Header></Header>

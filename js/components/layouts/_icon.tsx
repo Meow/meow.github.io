@@ -1,6 +1,8 @@
-import React from "react";
+interface IconProps {
+  name: string;
+}
 
-function Icon(props) {
+function Icon(props: IconProps) {
   return <i className={`fa ${props.name}`}></i>;
 }
 

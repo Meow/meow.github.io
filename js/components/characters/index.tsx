@@ -1,6 +1,4 @@
-import React from "react";
-
-function CharactersPage(_props) {
+function CharactersPage() {
   return (
     <div className="description">
       <h1>

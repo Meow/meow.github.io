@@ -1,12 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import PageContainer from "./components/layouts/page_container.jsx";
-import Index from "./components/index.jsx";
-import ArtistPage from "./components/artist/index.jsx";
-import CharactersPage from "./components/characters/index.jsx";
-import ProgrammerPage from "./components/programmer/index.jsx";
-import ContactPage from "./components/contact/index.jsx";
+import PageContainer from "./components/layouts/page_container";
+import Index from "./components/index";
+import ArtistPage from "./components/artist/index";
+import CharactersPage from "./components/characters/index";
+import ProgrammerPage from "./components/programmer/index";
+import ContactPage from "./components/contact/index";
 
 export default function AppRoutes() {
   return (

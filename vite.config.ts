@@ -1,7 +1,10 @@
 import { defineConfig } from "vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import { fileURLToPath } from "node:url";
+
+const resolvePath = (relative: string) =>
+  fileURLToPath(new URL(relative, import.meta.url));
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,8 +24,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      components: path.resolve(__dirname, "js/components"),
-      lib: path.resolve(__dirname, "js/lib"),
+      components: resolvePath("js/components"),
+      lib: resolvePath("js/lib"),
     },
   },
 });

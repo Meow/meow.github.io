@@ -1,10 +1,9 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
-const navLinkClass = ({ isActive }) =>
+const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   isActive ? "navigation__link navigation__link--active" : "navigation__link";
 
-function Navigation(_props) {
+function Navigation() {
   return (
     <div className="navigation__block">
       <nav className="navigation">

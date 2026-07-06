@@ -1,6 +1,4 @@
-import React from "react";
-
-function ContactPage(_props) {
+function ContactPage() {
   return (
     <div className="description">
       <div className="block">

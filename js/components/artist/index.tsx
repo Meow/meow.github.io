@@ -1,6 +1,4 @@
-import React from "react";
-
-function ArtistPage(_props) {
+function ArtistPage() {
   return (
     <div className="description">
       <h1>

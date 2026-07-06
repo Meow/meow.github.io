@@ -1,7 +1,6 @@
-import React from "react";
 import ProgrammerProject from "./_project";
 
-function ProgrammerProjects(_props) {
+function ProgrammerProjects() {
   return (
     <table className="projects">
       <tbody>

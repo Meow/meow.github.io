@@ -1,8 +1,17 @@
-import React from "react";
 import IconLink from "components/layouts/_icon_link";
 import Icon from "components/layouts/_icon";
 
-function ProgrammerProject(props) {
+interface ProgrammerProjectProps {
+  name: string;
+  time: string;
+  icon: string;
+  type: string;
+  info: string;
+  desc: string;
+  link?: string;
+}
+
+function ProgrammerProject(props: ProgrammerProjectProps) {
   return (
     <tr>
       <td>{props.name}</td>

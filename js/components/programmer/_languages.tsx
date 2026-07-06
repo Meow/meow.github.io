@@ -1,6 +1,4 @@
-import React from "react";
-
-function ProgrammerLanguages(_props) {
+function ProgrammerLanguages() {
   return (
     <table className="projects">
       <thead>

@@ -1,13 +1,20 @@
 // Linear interpolation.
-function lerp(delta, from, to) {
+function lerp(delta: number, from: number, to: number): number {
   if (delta >= 1) return to;
   else if (delta <= 0) return from;
 
   return from + (to - from) * delta;
 }
 
+type ParallaxConstraint = "vertical" | "horizontal" | null;
+
 // Initialize parallax on element `node`.
-function parallaxInit(node, delta = 0.2, constrain = null, multiplier = 1) {
+function parallaxInit(
+  node: HTMLElement | null,
+  delta = 0.2,
+  constrain: ParallaxConstraint = null,
+  multiplier = 1,
+): HTMLElement | undefined {
   if (!node) return;
 
   const parent = node.parentElement;
@@ -26,7 +33,7 @@ function parallaxInit(node, delta = 0.2, constrain = null, multiplier = 1) {
   node.style.transform = `translate(${targetLeft}px, ${targetTop}px)`;
 
   // Create an updater function that calculates the desired parallax position.
-  const listenerFunc = (x, y) => {
+  const listenerFunc = (x: number, y: number) => {
     targetLeft =
       (parent.scrollWidth * 0.5 -
         node.scrollWidth * 0.5 +

@@ -1,8 +1,7 @@
-import React from "react";
 import ProgrammerProjects from "./_projects";
 import ProgrammerLanguages from "./_languages";
 
-function ProgrammerPage(_props) {
+function ProgrammerPage() {
   return (
     <div className="description">
       <div className="block">
