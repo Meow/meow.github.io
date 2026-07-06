@@ -1,23 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const navLinkClass = ({ isActive }) =>
+  isActive ? "navigation__link navigation__link--active" : "navigation__link";
 
 function Navigation(_props) {
   return (
-    <div className="block navigation__block">
-      <div className="block__content navigation">
-        <Link to="/" className="navigation__link">
+    <div className="navigation__block">
+      <nav className="navigation">
+        <NavLink to="/" end className={navLinkClass}>
           <i className={`fa fa-info-circle`}></i>
           <span className="hidden--phone"> About Me</span>
-        </Link>
-        <Link to="/pages/programmer" className="navigation__link">
+        </NavLink>
+        <NavLink to="/pages/programmer" className={navLinkClass}>
           <i className={`fa fa-code`}></i>
           <span className="hidden--phone"> Programmer</span>
-        </Link>
-        <Link to="/pages/contact" className="navigation__link">
+        </NavLink>
+        <NavLink to="/pages/contact" className={navLinkClass}>
           <i className={`fa fa-envelope`}></i>
           <span className="hidden--phone"> Contact</span>
-        </Link>
-      </div>
+        </NavLink>
+      </nav>
     </div>
   );
 }

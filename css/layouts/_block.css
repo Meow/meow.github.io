@@ -1,5 +1,9 @@
 .block {
-  margin-bottom: var(--padding-normal);
+  margin-bottom: var(--padding-large);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-outer);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .block--solid {
@@ -7,13 +11,25 @@
 }
 
 .block__header {
-  font-size: var(--font-h2-size);
-  padding: var(--padding-normal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-h3-size);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: var(--padding-normal) var(--padding-large);
+  background: var(--background-header-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.block__header i {
+  color: var(--accent-border-color);
+  width: 1.25em;
+  text-align: center;
 }
 
 .block__content {
-  padding: var(--padding-normal);
-  border-radius: var(--border-radius-outer);
+  padding: var(--padding-large);
   background: var(--background-light-color);
 }
 

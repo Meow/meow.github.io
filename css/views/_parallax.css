@@ -3,6 +3,16 @@
   margin: auto;
   width: fit-content;
   font-size: var(--font-header-size);
-  font-weight: 100;
+  font-weight: 300;
   font-variant: small-caps;
+  letter-spacing: 0.08em;
+  background: linear-gradient(
+    120deg,
+    var(--text-color),
+    var(--accent-border-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 12px hsl(from var(--accent-color) h s l / 0.5));
 }

@@ -2,6 +2,8 @@
   width: 100%;
   border: 0;
   border-collapse: collapse;
+  border-radius: var(--border-radius-inner);
+  overflow: hidden;
 }
 
 .projects td {
@@ -11,9 +13,37 @@
   text-align: left;
 }
 
+/* Plain project rows: separators + subtle hover fill. */
+.projects tbody tr:not([class]) {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.15s ease;
+}
+
+.projects tbody tr:not([class]):last-child {
+  border-bottom: 0;
+}
+
+.projects tbody tr:not([class]):hover {
+  background-color: hsl(from var(--accent-color) h s l / 0.16);
+}
+
+/* Skill-colored language rows: brighten on hover, keeping their hue. */
+.projects tbody tr[class] {
+  transition: filter 0.15s ease;
+}
+
+.projects tbody tr[class]:hover {
+  filter: brightness(1.2);
+}
+
 .projects th {
   padding: var(--padding-normal) 0;
   text-align: left;
+  font-size: var(--font-h5-size);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 @mixin if-phone {

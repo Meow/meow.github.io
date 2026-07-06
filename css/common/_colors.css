@@ -15,9 +15,16 @@ $information-color: #436a76;
 
 :root {
   --text-color: $text-color;
+  --text-muted-color: hsl(from $text-color h s calc(l - 30));
   --background-color: $background-color;
   --background-light-color: hsl(from $accent-color h calc(s - 12) calc(l - 23));
+  --background-header-color: hsl(from $accent-color h calc(s - 4) calc(l - 15));
+  --border-color: hsl(from $accent-color h s calc(l - 8));
   --link-color: hsl(from $accent-color h s calc(l + 50));
+
+  --shadow-color: hsl(from $background-color h s l / 0.55);
+  --shadow-card:
+    0 1px 2px var(--shadow-color), 0 6px 20px -8px var(--shadow-color);
 
   @mixin define-color accent, $accent-color;
   @mixin define-color danger, $danger-color;
