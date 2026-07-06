@@ -24,16 +24,55 @@
 }
 
 .projects tbody tr:not([class]):hover {
-  background-color: hsl(from var(--accent-color) h s l / 0.16);
+  background-color: var(--accent-tint-color);
 }
 
-/* Skill-colored language rows: brighten on hover, keeping their hue. */
+/* Each .language--* level (below) maps the shared --skill-* custom properties
+   to its precomputed static colors, which these rules consume via plain
+   var() — no runtime hsl(from ...), so older browsers are supported. */
 .projects tbody tr[class] {
-  transition: filter 0.15s ease;
+  background: var(--skill-bg, var(--information-tint-color));
+  transition: background-color 0.15s ease;
 }
 
 .projects tbody tr[class]:hover {
-  filter: brightness(1.2);
+  background: var(--skill-bg-hover, var(--information-tint-hover-color));
+}
+
+.projects tbody tr[class] td {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.projects tbody tr[class]:last-child td {
+  border-bottom: 0;
+}
+
+.projects tbody tr[class] td:first-child {
+  border-left: 3px solid var(--skill-vivid, var(--information-vivid-color));
+  font-weight: 500;
+}
+
+.projects thead th:last-child,
+.projects tbody tr[class] td:last-child {
+  width: 10rem;
+}
+
+.projects tbody tr[class] td:last-child {
+  color: var(--skill-vivid, var(--information-vivid-color));
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.projects tbody tr[class] td:last-child::before {
+  content: "";
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  margin-right: 0.55em;
+  border-radius: 50%;
+  background: var(--skill-vivid, var(--information-vivid-color));
+  box-shadow: 0 0 6px var(--skill-glow, var(--information-glow-color));
+  vertical-align: middle;
 }
 
 .projects th {
@@ -46,6 +85,10 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+.projects th:first-child {
+  border-left: 3px solid transparent;
+}
+
 @mixin if-phone {
   .projects th {
     padding: var(--padding-small) 0;
@@ -53,41 +96,29 @@
 }
 
 .language--expert {
-  background: var(--danger-color);
-  border-bottom: 1px solid var(--danger-border-color);
-}
-
-.language--expert:last-child {
-  border: 0;
-  box-shadow: none;
+  --skill-vivid: var(--danger-vivid-color);
+  --skill-glow: var(--danger-glow-color);
+  --skill-bg: var(--danger-tint-color);
+  --skill-bg-hover: var(--danger-tint-hover-color);
 }
 
 .language--advanced {
-  background: var(--warning-color);
-  border-bottom: 1px solid var(--warning-border-color);
-}
-
-.language--advanced:last-child {
-  border: 0;
-  box-shadow: none;
+  --skill-vivid: var(--warning-vivid-color);
+  --skill-glow: var(--warning-glow-color);
+  --skill-bg: var(--warning-tint-color);
+  --skill-bg-hover: var(--warning-tint-hover-color);
 }
 
 .language--intermediate {
-  background: var(--success-color);
-  border-bottom: 1px solid var(--success-border-color);
-}
-
-.language--intermediate:last-child {
-  border: 0;
-  box-shadow: none;
+  --skill-vivid: var(--success-vivid-color);
+  --skill-glow: var(--success-glow-color);
+  --skill-bg: var(--success-tint-color);
+  --skill-bg-hover: var(--success-tint-hover-color);
 }
 
 .language--beginner {
-  background: var(--information-color);
-  border-bottom: 1px solid var(--information-border-color);
-}
-
-.language--beginner:last-child {
-  border: 0;
-  box-shadow: none;
+  --skill-vivid: var(--information-vivid-color);
+  --skill-glow: var(--information-glow-color);
+  --skill-bg: var(--information-tint-color);
+  --skill-bg-hover: var(--information-tint-hover-color);
 }

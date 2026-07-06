@@ -11,6 +11,12 @@ $information-color: #436a76;
   --$(name)-color: $(variable);
   --$(name)-border-color: hsl(from $variable h s calc(l + 30));
   --$(name)-dark-color: hsl(from $variable h s calc(l - 12));
+  --$(name)-vivid-color: hsl(from $variable h calc(s + 45) calc(l + 34));
+  --$(name)-glow-color: hsl(from $variable h calc(s + 45) calc(l + 34) / 0.7);
+  --$(name)-tint-color: hsl(from $variable h calc(s + 28) calc(l + 4) / 0.24);
+  --$(name)-tint-hover-color: hsl(
+    from $variable h calc(s + 28) calc(l + 6) / 0.38
+  );
 }
 
 :root {
@@ -21,6 +27,15 @@ $information-color: #436a76;
   --background-header-color: hsl(from $accent-color h calc(s - 4) calc(l - 15));
   --border-color: hsl(from $accent-color h s calc(l - 8));
   --link-color: hsl(from $accent-color h s calc(l + 50));
+  --link-hover-color: hsl(from $accent-color h s calc(l + 62));
+  --accent-tint-color: hsl(from $accent-color h s l / 0.16);
+  --accent-tint-strong-color: hsl(from $accent-color h s l / 0.35);
+  --accent-ring-color: hsl(from $accent-color h s l / 0.2);
+  --accent-shadow-color: hsl(from $accent-color h s l / 0.5);
+  --accent-glow-primary-color: hsl(from $accent-color h s calc(l - 12) / 0.55);
+  --accent-glow-secondary-color: hsl(
+    from $accent-color h s calc(l - 18) / 0.35
+  );
 
   --shadow-color: hsl(from $background-color h s l / 0.55);
   --shadow-card:

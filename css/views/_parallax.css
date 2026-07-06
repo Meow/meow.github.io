@@ -14,5 +14,5 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 2px 12px hsl(from var(--accent-color) h s l / 0.5));
+  filter: drop-shadow(0 2px 12px var(--accent-shadow-color));
 }

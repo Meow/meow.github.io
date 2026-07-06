@@ -40,17 +40,17 @@
 }
 
 .navigation__link:hover {
-  background-color: hsl(from var(--accent-color) h s l / 0.35);
-  color: hsl(from var(--link-color) h s calc(l + 12));
+  background-color: var(--accent-tint-strong-color);
+  color: var(--link-hover-color);
 }
 
 .navigation__link--active {
   background-color: var(--accent-color);
-  color: hsl(from var(--link-color) h s calc(l + 15));
+  color: var(--link-hover-color);
 }
 
 .navigation__link--active i {
-  color: hsl(from var(--link-color) h s calc(l + 15));
+  color: var(--link-hover-color);
 }
 
 .header {

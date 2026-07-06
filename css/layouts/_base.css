@@ -13,12 +13,12 @@ body {
   background-image:
     radial-gradient(
       ellipse 90% 60% at 50% -10%,
-      hsl(from var(--accent-color) h s calc(l - 12) / 0.55),
+      var(--accent-glow-primary-color),
       transparent 70%
     ),
     radial-gradient(
       ellipse 70% 50% at 100% 0%,
-      hsl(from var(--accent-color) h s calc(l - 18) / 0.35),
+      var(--accent-glow-secondary-color),
       transparent 60%
     );
   background-attachment: fixed;
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: hsl(from var(--link-color) h s calc(l + 10));
+  color: var(--link-hover-color);
 }
 
 .icon_link {
