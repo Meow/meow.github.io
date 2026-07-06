@@ -2,6 +2,7 @@ import ProgrammerProjects from "./_projects";
 import ProgrammerLanguages from "./_languages";
 import ProgrammerSkills from "./_skills";
 import ProgrammerFrameworks from "./_frameworks";
+import SkillLevel from "./_skill_level";
 
 function ProgrammerPage() {
   return (
@@ -45,27 +46,39 @@ function ProgrammerPage() {
           <i className="fa fa-question"></i> Skill Level Explanation
         </div>
         <div className="block__content">
-          <ul>
-            <li>
-              <strong>Beginner</strong> - I have some experience with this, but
-              not enough to be considered competent. I am still learning! It is
-              by learning that one improves and becomes an expert.
+          <ul className="skill-legend">
+            <li className="skill-legend__item language--beginner">
+              <SkillLevel level="beginner" />
+              <span className="skill-legend__desc">
+                I have some experience with this, but not enough to be
+                considered competent. I am still learning! It is by learning
+                that one improves and becomes an expert.
+              </span>
             </li>
-            <li>
-              <strong>Intermediate</strong> - I am competent with this, but not
-              super comfortable with it yet. I can get the job done, but it may
-              take me a while to figure out the best way to do it.
+            <li className="skill-legend__item language--intermediate">
+              <SkillLevel level="intermediate" />
+              <span className="skill-legend__desc">
+                I am competent with this, but not super comfortable with it yet.
+                I can get the job done, but it may take me a while to figure out
+                the best way to do it.
+              </span>
             </li>
-            <li>
-              <strong>Advanced</strong> - I am very competent with this, and
-              comfortable enough to work with it on a daily basis. I can get the
-              job done efficiently. However, some knowledge is not yet entirely
-              intuitive to me, and I might be slow at some things.
+            <li className="skill-legend__item language--advanced">
+              <SkillLevel level="advanced" />
+              <span className="skill-legend__desc">
+                I am very competent with this, and comfortable enough to work
+                with it on a daily basis. I can get the job done efficiently.
+                However, some knowledge is not yet entirely intuitive to me, and
+                I might be slow at some things.
+              </span>
             </li>
-            <li>
-              <strong>Expert</strong> - I am extremely competent and comfortable
-              with this, and could probably teach it to others. This is my area
-              of expertise, and most concepts are entirely intuitive to me.
+            <li className="skill-legend__item language--expert">
+              <SkillLevel level="expert" />
+              <span className="skill-legend__desc">
+                I am extremely competent and comfortable with this, and could
+                probably teach it to others. This is my area of expertise, and
+                most concepts are entirely intuitive to me.
+              </span>
             </li>
           </ul>
         </div>

@@ -13,7 +13,6 @@
   text-align: left;
 }
 
-/* Plain project rows: separators + subtle hover fill. */
 .projects tbody tr:not([class]) {
   border-bottom: 1px solid var(--border-color);
   transition: background-color 0.15s ease;
@@ -27,9 +26,6 @@
   background-color: var(--accent-tint-color);
 }
 
-/* Each .language--* level (below) maps the shared --skill-* custom properties
-   to its precomputed static colors, which these rules consume via plain
-   var() — no runtime hsl(from ...), so older browsers are supported. */
 .projects tbody tr[class] {
   background: var(--skill-bg, var(--information-tint-color));
   transition: background-color 0.15s ease;
@@ -54,25 +50,11 @@
 
 .projects thead th:last-child,
 .projects tbody tr[class] td:last-child {
-  width: 10rem;
+  width: 12rem;
 }
 
 .projects tbody tr[class] td:last-child {
-  color: var(--skill-vivid, var(--information-vivid-color));
-  font-weight: 600;
   white-space: nowrap;
-}
-
-.projects tbody tr[class] td:last-child::before {
-  content: "";
-  display: inline-block;
-  width: 0.55em;
-  height: 0.55em;
-  margin-right: 0.55em;
-  border-radius: 50%;
-  background: var(--skill-vivid, var(--information-vivid-color));
-  box-shadow: 0 0 6px var(--skill-glow, var(--information-glow-color));
-  vertical-align: middle;
 }
 
 .projects th {
@@ -121,4 +103,93 @@
   --skill-glow: var(--information-glow-color);
   --skill-bg: var(--information-tint-color);
   --skill-bg-hover: var(--information-tint-hover-color);
+}
+
+.skill-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--padding-normal);
+}
+
+.skill-legend__item {
+  padding: var(--padding-normal);
+  border-radius: var(--border-radius-inner);
+  border-left: 3px solid var(--skill-vivid, var(--information-vivid-color));
+  background: var(--skill-bg, var(--information-tint-color));
+}
+
+.skill-legend__item .skill-badge {
+  margin-bottom: var(--padding-small);
+}
+
+.skill-legend__desc {
+  display: block;
+  line-height: 1.35;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.15em 0.65em;
+  border: 1px solid var(--skill-vivid, var(--information-vivid-color));
+  border-radius: 999px;
+  color: var(--skill-vivid, var(--information-vivid-color));
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.skill-signal {
+  --sig-off: rgba(255, 255, 255, 0.22);
+  --sig-on: var(--skill-vivid, var(--information-vivid-color));
+  --sig-1: var(--sig-off);
+  --sig-2: var(--sig-off);
+  --sig-3: var(--sig-off);
+  --sig-4: var(--sig-off);
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background-image:
+    linear-gradient(var(--sig-1), var(--sig-1)),
+    linear-gradient(var(--sig-2), var(--sig-2)),
+    linear-gradient(var(--sig-3), var(--sig-3)),
+    linear-gradient(var(--sig-4), var(--sig-4));
+  background-repeat: no-repeat;
+  background-size:
+    3px 25%,
+    3px 50%,
+    3px 75%,
+    3px 100%;
+  background-position:
+    0 100%,
+    4px 100%,
+    8px 100%,
+    12px 100%;
+}
+
+.language--beginner .skill-signal {
+  --sig-1: var(--sig-on);
+}
+
+.language--intermediate .skill-signal {
+  --sig-1: var(--sig-on);
+  --sig-2: var(--sig-on);
+}
+
+.language--advanced .skill-signal {
+  --sig-1: var(--sig-on);
+  --sig-2: var(--sig-on);
+  --sig-3: var(--sig-on);
+}
+
+.language--expert .skill-signal {
+  --sig-1: var(--sig-on);
+  --sig-2: var(--sig-on);
+  --sig-3: var(--sig-on);
+  --sig-4: var(--sig-on);
 }
