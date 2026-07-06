@@ -60,10 +60,10 @@ function ProgrammerSkills() {
             <SkillLevel level="beginner" />
           </td>
         </tr>
-        <tr className="language--advanced">
+        <tr className="language--expert">
           <td>2D Asset Production (Art / Design)</td>
           <td>
-            <SkillLevel level="advanced" />
+            <SkillLevel level="expert" />
           </td>
         </tr>
         <tr className="language--intermediate">
@@ -78,10 +78,10 @@ function ProgrammerSkills() {
             <SkillLevel level="advanced" />
           </td>
         </tr>
-        <tr className="language--advanced">
+        <tr className="language--intermediate">
           <td>Electrical Engineering</td>
           <td>
-            <SkillLevel level="advanced" />
+            <SkillLevel level="intermediate" />
           </td>
         </tr>
       </tbody>
